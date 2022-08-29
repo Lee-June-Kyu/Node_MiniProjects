@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>RESTful SERVER</title>
+    <link rel="stylesheet" href="/restFront.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+    <div style="background-color: orange">
+      <form id="form">
+        <input type="text" id="comment" style="width: 500px" />
+        <button type="submit" style="width: 200px">등록</button>
+      </form>
+    </div>
+    <!-- <button id="bt1" onclick="getUser();">사용자 출력</button> -->
+    <div style="height: auto" id="list"></div>
+    <button id="refresh" onclick="getUser;">메시지 불러오기</button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/restFront.js"></script>
+    <!--5. 여기에 있는 정보를 가져와-->
+  </body>
+</html>

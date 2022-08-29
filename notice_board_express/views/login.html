@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>쿠키&세션 이해하기</title>
+  </head>
+  <body>
+    <form action="/login" method="post">
+      <input id="name" name="id" placeholder="id를 입력하세요" />
+      <input type="password" name="password" placeholder="pw를 입력하세요" />
+      <button type="button" id="join">회원가입</button>
+      <button type="submit" id="login">로그인</button>
+    </form>
+  </body>
+  <script>
+    document.getElementById("join").addEventListener("click", (e) => {
+      location.href = "/user/join";
+    });
+  </script>
+</html>
